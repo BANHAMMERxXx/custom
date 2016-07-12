@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "BNBot";
+    var fork = "basicBot";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,16 +46,16 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "BNBot",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupEmoji: true, // true or false
       autowoot: true,
-      autoskip: false,
+      autoskip: true,
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
@@ -64,7 +64,7 @@
       bouncerPlus: true,
       blacklistEnabled: true,
       lockdownEnabled: false,
-      lockGuard: false,
+      lockGuard: true,
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
